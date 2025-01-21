@@ -13,6 +13,7 @@ html,body{
     background-color: #f1f1f1;
 }
 
+/* Navbar Styling */
 nav{
     position: fixed;
     display: flex;
@@ -86,6 +87,7 @@ button:hover svg{
     background-color: #f1f1f1;
 } 
 
+/* page 1 styling */
 #page1{
     height: 100vh;
     width: 100vw;
@@ -142,6 +144,8 @@ button:hover svg{
     padding: 2px 5px;
 }
 
+/* moving logos animation */
+
 #moving-div{
     margin-top: 8vh;
     width: 50%;
@@ -181,11 +185,92 @@ button:hover svg{
     background: linear-gradient(to left, #f1f1f1, transparent);
     z-index: 2;
 }
+
+/* page 2 started here */
+
 #page2{
     height: 100vh;
     width: 100vw;
     position: relative;
+    display: flex;
+    padding: 4vw 9vw;
+    padding-bottom: 7vw;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #11111149;
 }
+
+#page2-left{
+    padding: 2vw 0vw;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#page2-left h6{
+    font-weight: 400;
+    font-size: 1.3vw;
+    width: 80%;
+}
+
+#page2-right{
+    width: 50%;
+    height: 100%;
+}
+
+.right-elem {
+    padding: 1vw 0vw;
+    position: relative;
+    width: 100%;
+    padding-top: 2vw;
+    padding-bottom: 7vw;
+    border-bottom: 1px solid #11111146;
+    cursor: pointer;
+}
+.right-elem h2{
+    font-weight: 400;
+}
+.right-elem img{
+    opacity: 0;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    scale: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes move {
