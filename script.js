@@ -34,7 +34,8 @@ ScrollTrigger.refresh();
 }
 loco();
 
-let nav = document.querySelector("nav");
+function navAnim(){
+    let nav = document.querySelector("nav");
 
 nav.addEventListener("mouseenter", function(){
     let tl = gsap.timeline()
@@ -62,11 +63,11 @@ nav.addEventListener("mouseleave", function(){
     })
     tl.to("#nav-p2 h5",{
         display : "none",
-        delay : -1,
     })
     tl.to("#nav-btm",{
         height: "0",
-        delay : -1,
     })
 
 })
+}
+navAnim();

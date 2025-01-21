@@ -17,7 +17,7 @@ nav{
     position: fixed;
     display: flex;
     align-items: flex-start;
-    height: 12vh;
+    height: 10vh;
     width: 100%;
     padding: 2vw 10.4vw;
     justify-content: space-between;
@@ -26,7 +26,7 @@ nav{
     background-color: #f1f1f1;
 }
 nav #nav-p2{
-    gap: 1vw;
+    gap: 1.5vw;
     margin-top: 5px;
     font-weight: 600;
     display: flex;
@@ -69,8 +69,12 @@ nav button{
 button svg{
     margin-left: 1.5vw;
     height: .85vw;
+    transition: all 0.6s ease;
 }
 
+button:hover svg{
+    transform: rotate(-18deg);
+}
 #nav-btm{
     width: 80%;
     height: 0vh;
@@ -104,6 +108,12 @@ button svg{
     height: 6.5vw;
     border-radius: 50%;
     background-color: #0DA34E;
+    transition: 1s ease all;
+}
+
+#page1 h1 svg:hover{
+    cursor: pointer;
+    transform: rotate(-19deg) scale(.9);
 }
 
 #page1 p{
@@ -132,9 +142,58 @@ button svg{
     padding: 2px 5px;
 }
 
+#moving-div{
+    margin-top: 8vh;
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    white-space: nowrap;
+    padding: 1.5vw;
+    overflow: hidden;
+}
+.move{
+    display: inline-block;
+    animation: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.move img{
+    width: 5vw;
+    margin: 0vw 1vw;
+}
 
+#blr-left{
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #f1f1f1, transparent);
+    z-index: 2;
+}
+#blr-right{
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #f1f1f1, transparent);
+    z-index: 2;
+}
 #page2{
     height: 100vh;
     width: 100vw;
     position: relative;
+}
+
+
+@keyframes move {
+    0%{
+        transform: translateX(0%);
+    }
+    
+    100%{
+        transform: translateX(-100%);
+    }
 }
