@@ -154,6 +154,7 @@ button:hover svg{
     white-space: nowrap;
     padding: 1.5vw;
     overflow: hidden;
+    user-select: none;
 }
 .move{
     display: inline-block;
@@ -242,6 +243,7 @@ button:hover svg{
 }
 
 #page3{
+    user-select: none;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -253,6 +255,16 @@ button:hover svg{
     justify-content: center;
 }
 
+#page3 video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    transform: scaleX(.7) scaleY(0);
+    border-radius: 10px;
+    opacity: 0;
+}
 .page3-center{
     align-items: center;
     justify-content: center;
@@ -270,18 +282,18 @@ button:hover svg{
     padding: 10px 25px;
     text-transform: uppercase;
     font-size: 1vw;
-    margin-top: 1.5vw;
     font-weight: 400;
     background-color: #f1f1f1;
     border-radius: 50px;
     opacity: 0;
     transition: 0.8s ease all;
+    transform: translateY(10%);
 }
 
 .page3-center:hover h5{
     opacity: 1;
-    margin-top: 0.5vw;
     scale: .9;
+    transform: translateY(-5%);
 }
 
 .page3-center:hover .icon{
