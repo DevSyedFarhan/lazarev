@@ -70,7 +70,7 @@ nav.addEventListener("mouseleave", function(){
 
 })
 }
-navAnim();
+
 
 function elemanim(){
 let relem = document.querySelectorAll(".right-elem")
@@ -90,10 +90,11 @@ relem.forEach(function(elem){
     })
     elem.addEventListener("mousemove", function(dets){
         gsap.to(elem.childNodes[3], {
-            x: dets.x - elem.getBoundingClientRect().x - 90,
-            y: dets.y - elem.getBoundingClientRect().y - 150
+            x: dets.x - elem.getBoundingClientRect().x - 60,
+            y: dets.y - elem.getBoundingClientRect().y - 140
         })
     })
 })
 }
+navAnim();
 elemanim();
