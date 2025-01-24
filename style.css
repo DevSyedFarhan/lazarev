@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: poppins;
 }
 
 html,body{
@@ -316,6 +316,7 @@ button:hover svg{
 }
 #page4-left h1{
     font-size: 3vw;
+    padding-bottom: 20vw;
     font-weight: 600;
 }
 
@@ -332,7 +333,7 @@ button:hover svg{
     font-size: 1.5vw;
 }
 #p4-text{
-    padding-top: 20vw;
+    padding-top: 9vw;
     display: flex;
     gap: 5vw;
     flex-direction: column;
@@ -415,24 +416,190 @@ button:hover svg{
 
 #page6{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
-    background-color: #0DA34E;
+    background-color: #111111;
+    color: #f1f1f1;
+    padding-bottom: 12vh;
 }
 
+.section{
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    padding: 12vh 10vw;
+    padding-bottom: 0vh;
+    user-select: none;
+}
 
+.sec-left{
+    border-top: 2px solid #ffffff9c;
+    padding: 3vh 0vw;
+    width: 30%;
+    height: 100%;
+    gap: 8vh;
+    display: flex;
+    flex-direction: column;
+}
 
+.sec-left h2{
+    font-size: 3vw;
+    font-weight: 400;
+}
+.sec-left p{
+    font-size: 1.2vw;
+}
 
+.sec-right{
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+.sec-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
+.sec-right video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
 
+#page7{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6vh 10.5vw;
+    position: relative;
+}
 
+#page7>button{
+    margin-top: 20vh;
+    padding: 1vw 3.4vw;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    background-color: #0DA34E;
+    text-transform: uppercase;
 
+}
 
+#page7-right{
+    width: 70%;
+}
+#page7-right>p{
+    font-size: 2vw;
+    padding-bottom: 5vw;
+}
+#page7-right>h1{
+    font-size: 4vw;
+    padding-bottom: 5vw;
+}
 
+#page7-content{
+    border-top: 1px solid #111111;
+    padding: 4vh 0;
+}
 
+#page7-content h1{
+    font-size: 3vw;
+}
 
+#flex{
+    display: flex;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+}
+#flex h4{
+    border: 1px solid black;
+    padding: .6vw 1vw;
+    font-weight: 500;
+    border-radius: 50px;
+}
 
+.page7-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    padding-top: 3vh;
+    padding-bottom: 9vh;
+    overflow: hidden;
+    border-top: 1px solid #33333333;
+    position: relative;
+}
+.page7-elem h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.page7-elem i{
+    font-size: 1.5vw;
+    position: relative;
+    z-index: 999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.page7-elem p{
+    width: 60%;
+    position: relative;
+    z-index: 999;
+}
 
+.over{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+.page7-elem:hover .over{
+    transform: translateY(0);
+    opacity: .3;
+}
+
+.page7-elem:hover{
+    border-top: 2px solid black;
+    cursor: pointer;
+}
+
+.page7-elem:hover h3{
+    padding-left: 2vw;
+}
+
+.page7-elem:hover i{
+    padding-right: 2vw;
+}
+
+summary::marker{
+    content: "";
+    display: none;
+}
+#page8{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
 
 
 
