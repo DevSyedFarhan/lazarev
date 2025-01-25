@@ -153,7 +153,6 @@ function btmanim(){
         scrollTrigger: {
             trigger : ".btm6",
             scroller : "#main",
-            markers : true,
             start : "top 80%",
             end : "top -10%",
             scrub : true,
