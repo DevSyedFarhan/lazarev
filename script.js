@@ -126,7 +126,8 @@ page3Animation();
 navAnim();
 elemanim();
 
-let sections = document.querySelectorAll(".sec-right");
+function videoanim(){
+    let sections = document.querySelectorAll(".sec-right");
 
 sections.forEach(function(elem){
     elem.addEventListener("mouseenter", function(){
@@ -138,3 +139,25 @@ sections.forEach(function(elem){
         elem.childNodes[3].load()
     })
 })
+}
+
+videoanim();
+
+function btmanim(){
+    gsap.from(".btm6 h4", {
+        x: 0,
+        duration: 2,
+        stagger:{
+            amount: -2
+        },
+        scrollTrigger: {
+            trigger : ".btm6",
+            scroller : "#main",
+            markers : true,
+            start : "top 80%",
+            end : "top -10%",
+            scrub : true,
+        }
+    })
+}
+btmanim();
