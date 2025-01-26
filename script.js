@@ -153,14 +153,8 @@ function btmanim(){
     })
 }
 
-loco();
-page3Animation();
-navAnim();
-elemanim();
-videoanim();
-btmanim();
-
-let tl = gsap.timeline();
+function loader(){
+    let tl = gsap.timeline();
 
 tl.from("#page1",{
     opacity: 0,
@@ -184,3 +178,12 @@ tl.from("#page1 h1, #page1 p, #page1 div",{
     stagger: .1,
     ease: Power1,
 })
+}
+
+loco();
+loader()
+page3Animation();
+navAnim();
+elemanim();
+videoanim();
+btmanim();
