@@ -32,7 +32,6 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-loco();
 
 function navAnim(){
     let nav = document.querySelector("nav");
@@ -122,10 +121,6 @@ video.addEventListener("click", function(){
 })
 }
 
-page3Animation();
-navAnim();
-elemanim();
-
 function videoanim(){
     let sections = document.querySelectorAll(".sec-right");
 
@@ -140,8 +135,6 @@ sections.forEach(function(elem){
     })
 })
 }
-
-videoanim();
 
 function btmanim(){
     gsap.from(".btm6 h4", {
@@ -159,4 +152,35 @@ function btmanim(){
         }
     })
 }
+
+loco();
+page3Animation();
+navAnim();
+elemanim();
+videoanim();
 btmanim();
+
+let tl = gsap.timeline();
+
+tl.from("#page1",{
+    opacity: 0,
+    duration:1,
+    ease: Power1,
+})
+tl.from("#page1",{
+    transform: "scaleX(0.7) scaleY(.2)",
+    duration: 1,
+    delay: -1,
+    ease: Power1,
+})
+tl.from("nav",{
+    opacity: 0,
+    duration: 0.5,
+    ease: Power1,
+})
+tl.from("#page1 h1, #page1 p, #page1 div",{
+    opacity: 0,
+    duration: 0.5,
+    stagger: .1,
+    ease: Power1,
+})
